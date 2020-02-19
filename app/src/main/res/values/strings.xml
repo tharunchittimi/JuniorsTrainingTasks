@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JuniorsTrainingTasks</string>
+
+    <string name="icon_arcore">&#xe93d;</string>
+    <string name="icon_retry">&#xe93c;</string>
+    <string name="icon_allow_location">&#xe92f;</string>
+
+</resources>

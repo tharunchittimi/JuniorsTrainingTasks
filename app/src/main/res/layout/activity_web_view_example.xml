@@ -1,0 +1,177 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llvRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebViewExample">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <SeekBar
+            android:id="@+id/sbRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:max="100"
+            android:progress="25"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="15dp">
+
+            <WebView
+                android:id="@+id/wbSample"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </WebView>
+
+            <ProgressBar
+                android:id="@+id/pbWebLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvHtmlViewer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/btnLoadUrl"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                android:text="Url"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_bright"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnHtmlWebview"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                android:text="Html Text"
+                android:layout_marginRight="25dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_bright"
+                android:textSize="16sp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSnackBar"
+            android:layout_width="180dp"
+            android:layout_height="42dp"
+            android:text="SnackBar"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_bright"
+            android:textSize="16sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnActionSnackbar"
+            android:layout_width="180dp"
+            android:layout_height="42dp"
+            android:text="SnackBar with Ok"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnCustomSnackbar"
+            android:layout_width="180dp"
+            android:layout_height="42dp"
+            android:text="Custom SnackBar"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textAllCaps="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvFontOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginRight="25dp"
+                android:textSize="35sp"/>
+
+            <TextView
+                android:id="@+id/tvFontTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="27sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/btnAlertDialog"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                android:text="Alert Dialog"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_orange_light"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnCustomDialog"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                android:text="Custom Dialog"
+                android:layout_marginRight="25dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_orange_light"
+                android:textSize="16sp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/slvExample"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/btnTextView"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="Text Examples"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btnEditText"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="EditText Examples"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btnImageView"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="ImageView Examples"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btnWebView"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="WebView Example"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btnAcTextView"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="AutoCompleteTextView"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="List View"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btnGrid"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="Grid View"
+            android:textAllCaps="false"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnRecycler"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="Recycler View"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btnCalendar"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="Calendar Example"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark"/>
+
+        <Button
+            android:id="@+id/btnMultiThreading"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="Multi Threading"
+            android:padding="2dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark"/>
+
+    </LinearLayout>
+
+</ScrollView>

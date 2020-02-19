@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".EditTextExample">
+
+    <EditText
+        android:id="@+id/etImeOptions"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:inputType="phone"
+        android:imeOptions="actionNext"
+        android:hint="Enter number"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="15dp">
+
+        <EditText
+            android:id="@+id/etFocus"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:maxLength="10"
+            android:hint="Enter text" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:src="@drawable/close"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etLineCounter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:maxLength="10"
+        android:digits="abcdefghijklmnopqrstuvwxyz"
+        android:hint="Enter text to get count"/>
+
+    <TextView
+        android:id="@+id/tvCountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone"
+        android:textSize="16sp"/>
+
+
+    <EditText
+        android:id="@+id/etMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:inputType="textImeMultiLine"
+        android:imeOptions="actionGo"
+        android:maxLines="2"
+        android:hint="Enter bigger text"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

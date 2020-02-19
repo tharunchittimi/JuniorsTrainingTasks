@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageExample">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivScaleImage"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/icon"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"/>
+
+        <RadioButton
+            android:id="@+id/rbIsLoadUri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Load with Uri" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="15dp">
+
+            <ProgressBar
+                android:id="@+id/pbLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:indeterminate="false"/>
+
+            <ImageView
+                android:id="@+id/ivUrlImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:contentDescription="@null" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cbIsGlide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load with Glide"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:id="@+id/ivGlideImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null" />
+
+        <Button
+            android:id="@+id/btnLoadImages"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:textAllCaps="false"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Load Images"/>
+
+    </LinearLayout>
+
+</ScrollView>

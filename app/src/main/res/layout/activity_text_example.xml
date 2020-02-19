@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".TextExample">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvSingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tvParagraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1.5"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tvLines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:lines="10"
+                android:background="@android:color/holo_blue_bright"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tvTypeface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tvLinksClickable"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:layout_marginBottom="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSpannable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
